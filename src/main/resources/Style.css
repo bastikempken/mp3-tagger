@@ -1,0 +1,9 @@
+#selected {
+  -fx-alignment: CENTER;
+}
+
+
+.beforeTagging { 
+    -fx-background-color: #fffafa;
+    -fx-border-color: #000000;
+}

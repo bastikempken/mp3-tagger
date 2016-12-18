@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<GridPane hgap="10.0" vgap="10.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="de.kempkensebastian.mp3tagger.gui.controller.ID3v1Controller">
+
+	<columnConstraints>
+		<ColumnConstraints hgrow="NEVER" maxWidth="254.0" minWidth="10.0" prefWidth="122.0" />
+		<ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="333.0" />
+		<ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="333.0" />
+	</columnConstraints>
+	<rowConstraints>
+		<RowConstraints fillHeight="false" minHeight="30.0" prefHeight="30.0" vgrow="NEVER" />
+		<RowConstraints fillHeight="false" minHeight="30.0" prefHeight="30.0" vgrow="NEVER" />
+		<RowConstraints fillHeight="false" minHeight="30.0" prefHeight="30.0" vgrow="NEVER" />
+		<RowConstraints fillHeight="false" minHeight="30.0" prefHeight="30.0" vgrow="NEVER" />
+		<RowConstraints fillHeight="false" minHeight="30.0" prefHeight="30.0" vgrow="NEVER" />
+		<RowConstraints fillHeight="false" minHeight="30.0" prefHeight="30.0" vgrow="NEVER" />
+		<RowConstraints fillHeight="false" minHeight="30.0" prefHeight="30.0" vgrow="NEVER" />
+		<RowConstraints fillHeight="false" minHeight="30.0" prefHeight="30.0" vgrow="NEVER" />
+		<RowConstraints fillHeight="false" minHeight="30.0" prefHeight="30.0" vgrow="NEVER" />
+	</rowConstraints>
+	<padding>
+		<Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+	</padding>
+	<children>
+		<Label text="Album:" />
+		<TextField fx:id="albumBeforeTagging" editable="false" styleClass="beforeTagging" GridPane.columnIndex="1" />
+		<TextField fx:id="albumAfterTagging" GridPane.columnIndex="2" />
+		<Label text="Artist:" GridPane.rowIndex="1" />
+		<TextField fx:id="artistBeforeTagging" editable="false" styleClass="beforeTagging" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+		<TextField fx:id="artistAfterTagging" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+		<Label text="Comment:" GridPane.rowIndex="2" />
+		<TextField fx:id="commentBeforeTagging" editable="false" styleClass="beforeTagging" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+		<TextField fx:id="commentAfterTagging" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+		<Label text="Genre:" GridPane.rowIndex="3" />
+		<TextField fx:id="genreBeforeTagging" editable="false" styleClass="beforeTagging" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+		<TextField fx:id="genreAfterTagging" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+		<Label text="Genre Description:" GridPane.rowIndex="4" />
+		<TextField fx:id="genreDescriptionBeforeTagging" editable="false" styleClass="beforeTagging" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+		<TextField fx:id="genreDescriptionAfterTagging" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+		<Label text="Title:" GridPane.rowIndex="5" />
+		<TextField fx:id="titleBeforeTagging" editable="false" styleClass="beforeTagging" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+		<TextField fx:id="titleAfterTagging" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+		<Label text="Track:" GridPane.rowIndex="6" />
+		<TextField fx:id="trackBeforeTagging" editable="false" styleClass="beforeTagging" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+		<TextField fx:id="trackAfterTagging" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+		<Label text="Version:" GridPane.rowIndex="7" />
+		<TextField fx:id="versionBeforeTagging" editable="false" styleClass="beforeTagging" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+		<TextField fx:id="versionAfterTagging" GridPane.columnIndex="2" GridPane.rowIndex="7" />
+		<Label text="Year:" GridPane.rowIndex="8" />
+		<TextField fx:id="yearBeforeTagging" editable="false" styleClass="beforeTagging" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+		<TextField fx:id="yearAfterTagging" GridPane.columnIndex="2" GridPane.rowIndex="8" />
+	</children>
+</GridPane>
